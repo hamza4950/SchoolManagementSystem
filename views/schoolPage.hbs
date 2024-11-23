@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <td>School name</td>
+            <td>Education level</td>
+            <td>Number of students</td>
+            <td>Headmaster</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each schools}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.eduLevel}}</td>
+            <td>{{this.studentNumber}}</td>
+            <td>{{this.headMaster}}</td>
+            <td><a href="schools/update?id={{this._id}}">Update</a></td>
+            <td><a href="schools/delete?id={{this._id}}">Delete</a></td>
+        {{/each}}
+
+    </tbody>
+
+</table>
+
+
